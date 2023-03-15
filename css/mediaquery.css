@@ -1,0 +1,114 @@
+/* Extra Small */
+
+@media only screen and (max-width: 349px),
+only screen and (min-width: 350px) and (max-width: 399px),
+only screen and (min-width: 400px) and (max-width: 499px) {
+    #Home .our-story-card-title {
+        font-size: 1.55rem;
+        line-height: 32px;
+        padding-bottom: 0 !important;
+    }
+    .our-story-card-subtitle {
+        font-size: 1.125rem;
+        margin: 1rem auto;
+        padding-bottom: 0px;
+    }
+    .hero-card .our-story-card-text {
+        padding: 30px 10;
+    }
+    .register-form-title {
+        padding: 0px 0px !important;
+        font-size: 1rem;
+        padding-bottom: 0px !important;
+    }
+    .navbar .container {
+        flex-wrap: nowrap;
+        padding: 0px 0px;
+    }
+}
+
+@media (min-width: 500px) and(max-width:767px) {
+    #Home .our-story-card-title {
+        font-size: 2.97rem;
+        line-height: 53px;
+        padding-bottom: 0px;
+    }
+    .our-story-card-subtitle {
+        font-size: 1.6rem;
+        margin: 1rem auto;
+        padding-bottom: 0px;
+    }
+    .hero-card .our-story-card-text {
+        margin-top: 0px !important;
+    }
+    .register-form-title {
+        padding: 0px 0px !important;
+        font-size: 1.2rem;
+        padding-bottom: 0px;
+    }
+    .navbar .container {
+        flex-wrap: nowrap;
+        padding: 0px 0px;
+    }
+    .our-story-content {
+        padding-top: 41px !important;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .accordionBox {
+        margin: 0px !important;
+    }
+    .our-story-content {
+        padding: 0px !important;
+        text-align: center;
+        padding-bottom: 0px !important;
+    }
+    .our-story-content-titlt {
+        font-size: 1.88rem!important;
+    }
+    .our-story-content-subtitle {
+        font-size: 1rem !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #Home .our-story-card-title {
+        font-size: 3.99rem;
+        line-height: 53px;
+        padding-bottom: 3px;
+    }
+    .our-story-card-subtitle {
+        font-size: 1.8rem;
+        margin: 1rem auto;
+        padding-bottom: 3px;
+    }
+    .hero-card .our-story-card-text {
+        margin-top: 0px !important;
+    }
+    .register-form-title {
+        padding: 0px 0px !important;
+        font-size: 2.2rem;
+        padding-bottom: 0px;
+    }
+    .navbar .container {
+        flex-wrap: nowrap;
+        padding: 0px 0px;
+    }
+    .our-story-content-subtitle {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin: 19.5px 0px 6.5px;
+        text-align: center;
+    }
+    .our-story-content-titlt {
+        text-align: center;
+    }
+    .our-story-card-img-container {
+        padding-top: 0px !important;
+    }
+    .our-story-content {
+        padding-top: 25px !important;
+    }
+}

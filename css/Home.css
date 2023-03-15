@@ -1,0 +1,275 @@
+body {
+    background-color: var(--mainbackGround);
+    /*   user-select: none; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --mainbackGround: #000;
+    --mainColor: #ffc20e;
+    --second-main-color: #ffff;
+    --borderBottomInput: #adacac;
+    --backGroundInput: #e9e9e9;
+    --img-Argbs: rgba(300, 0, 0, 0.5);
+}
+
+.change-language select {
+    background-color: transparent;
+    color: var(--second-main-color);
+    width: 120px;
+    padding: 5px 15px;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.img-wrapper {
+    background-color: var(--img-Argbs);
+}
+
+.ur-story-header-background a img {
+    width: 50px !important;
+}
+
+.our-story-card-background img {
+    width: 100% !important;
+    height: 700px !important;
+    object-fit: cover;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.border-bottom {
+    background: transparent;
+    border-bottom: 8px solid #222 !important;
+}
+
+.our-story-card-text {
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 75px 60px;
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#Home .our-story-card-title {
+    font-size: 3.88rem;
+    max-width: 800px;
+    line-height: 60.4px;
+    padding-bottom: 20px;
+}
+
+.our-story-card-subtitle {
+    font-size: 1.88rem;
+    margin: 1rem auto;
+    padding-bottom: 20px;
+}
+
+.register-form-title {
+    font-weight: 400;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.register-form-title a {
+    text-decoration: none;
+    color: var(--mainColor);
+}
+
+.our-story-content-titlt {
+    font-size: 2.88rem !important;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.our-story-content-subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 19.5px 0px 6.5px;
+}
+
+.our-story-content {
+    padding-top: 158px !important;
+}
+
+.our-story-card-img-container {
+    position: relative;
+    height: auto;
+    max-width: 100%;
+    z-index: 9999999999999;
+    margin-top: 40px;
+    position: relative;
+}
+
+.our-story-card-img-container img {
+    position: relative;
+    width: 100%;
+    z-index: 999999999999999;
+}
+
+.our-story-card-animation {
+    top: 75px;
+    left: 63px;
+}
+
+.our-story-card-animation-video {
+    top: 43px;
+    left: 118px;
+}
+
+.margin-t {
+    margin-top: 93px !important;
+}
+
+.answerBx p {
+    font-size: 1.4rem !important;
+}
+
+.accordionBox {
+    width: 100%;
+    margin: 15px 35px;
+}
+
+.accordionBox {
+    max-width: 10px 30px;
+    cursor: pointer;
+}
+
+.accordionBox .answerBx {
+    display: none;
+    margin: 0px 15px;
+}
+
+.footer-content ul li,
+a {
+    list-style: none !important;
+    color: var(--backGroundInput);
+}
+
+.footer-content ul li:hover a {
+    color: var(--mainColor);
+}
+
+
+/*************************************LOGIN**************************************************/
+
+.backGround-wallpaper img {
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.backGroun-Wallpaper-layer {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    top: 0;
+    width: 100%;
+}
+
+.form {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
+    margin: 200px auto;
+    width: 80%;
+}
+
+input,
+textarea {
+    background-color: transparent !important;
+    color: var(--backGroundInput) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(182, 182, 182) !important;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 6px 0px!important;
+    border-color: none !important;
+}
+
+button {
+    margin-top: 30px;
+}
+
+.btn-outline input:hover {
+    outline: var(--mainColor) !important;
+}
+
+.form-group h1 {
+    color: var(--mainColor);
+}
+
+.form-group .social {
+    cursor: pointer !important;
+}
+
+.form-group .social .fa-facebook-f {
+    color: rgb(15, 68, 161);
+}
+
+.form-group .social .fa-google {
+    color: rgba(234, 19, 19, 0.915);
+}
+
+.signup-btn {
+    background-color: transparent;
+    border-color: var(--mainColor);
+    color: #e9e9e9 !important;
+}
+
+.signin-page {
+    color: var(--mainColor);
+}
+
+.p:hover a {
+    color: var(--mainColor) !important;
+    text-decoration: none;
+}
+
+.footer .lowerFooter {
+    width: 100%;
+}
+
+.footer .lowerFooter ul li {
+    margin: 0px 5px;
+}
+
+.footer-span {
+    color: var(--mainColor);
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+}
+
+.btn-gmail {
+    background-color: #EA4335;
+}
+
+.btn-facebook .fa-facebook-f,
+.fa-google {
+    color: #ffff !important;
+}
+
+.btn-resgister button a {
+    color: #000;
+}

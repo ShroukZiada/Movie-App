@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>movie API</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section id="sideNav" class="position-fixed">
+        <div class="side_nav py-4 d-flex flex-column justify-content-between ">
+            <ul>
+                <li id="nowPlaying" class="list-group hover-yellow" value="movie/now_playing">
+                    Now playing
+                </li>
+                <li id="popular" class="list-group hover-yellow" value="movie/popular">
+                    popular
+                </li>
+                <li id="topRated" class="list-group hover-yellow" value="movie/top_rated">
+                    Top Rated
+                </li>
+                <li id="trending" class="list-group hover-yellow" value="trending/movie/week">
+                    Trending
+                </li>
+                <li id="upcoming" class="list-group hover-yellow" value="movie/upcoming">
+                    Upcoming
+                </li>
+                <li id="contactUs">
+                    <a class="list-group hover-yellow text-decoration-none" href="#contact">Contact Us
+                </a>
+                </li>
+            </ul>
+            <div class="side_nav_bottom_content">
+                <div class="d-flex justify-content-around ml-3 icons mb-4">
+
+                    <a class="btn text-white" style="background-color: #3b5998; ;" href="https://www.facebook.com/shroukk.z/" role="button">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn text-white" style="background-color: #0082ca;" href="https://www.linkedin.com/in/shroukk-zaida-9a9938200" role="button">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn text-white" style="background-color: #333333; " href="https://github.com/ShroukZiada" role="button">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <p class="text-white">© 2023 By <span class="footer-span">shrouk ziada </span> front-End Developer</p>
+            </div>
+        </div>
+        <div class="side_nav_control py-4 bg-white d-flex flex-column justify-content-between align-items-center">
+            <div class="w-50 mx-auto">
+                <img src="./img/logo.png" class="img-fluid mx-auto" alt="">
+            </div>
+            <span id="sideNaveBtn">
+                    <i id="closeIcon" class="fas fa-times"></i>
+                    <i id="openIcon" class="fa fa-align-justify"></i>
+                </span>
+            <i class="fas fa-globe position-absolute globe_icon"></i>
+            <i class="fas fa-share-alt"></i>
+        </div>
+    </section>
+    <section id="Home">
+        <div class="container py-5">
+            <div class="logout d-flex justify-content-end">
+                <button onclick="logOut()" type="button" class="btn btn-warning" id="logout">
+                        logOut
+                    </button>
+            </div>
+            <div class="row justify-content-around py-5">
+                <div class="col-lg-8 row text-center justify-content-center">
+                    <input id="searchInput" type="search" class="form-control rounded-5 p search_style_input" placeholder="search">
+                    <i class="fas fa-search searchIcon searchicon"></i>
+                </div>
+            </div>
+            <div id="moviesContainer" class="row"></div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container rounded py-5">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <input id="nameInput" type="text" class="form-control input_style w_80 my-3" placeholder="Enter Your Name">
+                    <div id="nameAlert" class="alert-danger p-3 rounded" role="alert">
+                        <p class="text-danger">Your Name is not valid</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="emailInput" type="email" class="form-control input_style my-3 w_80" placeholder="Enter Email">
+                    <div id="emailAlert" class="alert-danger p-3 rounded" role="alert">
+                        <p class="text-danger">Please entre valid email</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="phoneInput" type="number" class="form-control input_style my-3 w_80" placeholder="Enter Phone">
+                    <div id="phoneAlert" class="alert-danger p-3 rounded" role="alert">
+                        <p class="text-danger">Please entre valid phone</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="ageInput" type="number" class="form-control input_style my-3 w_80" placeholder="Enter Age">
+                    <div id="ageAlert" class="alert-danger p-3 rounded" role="alert">
+                        <p class="text-danger">Please entre valid Age</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="passwordInput" type="password" class="form-control input_style my-3 w_80" placeholder="Enter Password">
+                    <div id="passwordAlert" class="alert-danger p-3 rounded" role="alert">
+                        <p class="text-danger">
+                            the password must have at least 8 characters, including uppercase(A-Z), lowercase(a-z), and numbers.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="repasswordInput" type="password" class="form-control input_style my-3 w_80" placeholder="Enter RePassword">
+                    <div id="rePasswordAlert" class="alert-danger p-3 rounded" role="alert">
+                        <p class="text-danger">your passwords do not match</p>
+                    </div>
+                </div>
+            </div>
+            <button id="sendBtn" type="submit" class="btn btn-outline-danger mb-5">
+                    Send
+                </button>
+        </div>
+    </section>
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
